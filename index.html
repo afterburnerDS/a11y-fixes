@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="mainpage.css">
+
+    <title>Question's Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <header role="banner" class="header clearfix">
+                <div class="hidden"></div>
+            <div class="titles">
+                <h1>FC Porto</h1>
+                <h2>The History so Far</h2>
+                <img src="img/FC_Porto.svg.png" alt="">
+            </div>
+            <div class="infoGame">
+                    <span class="currentQuestion"></span>
+                    <span class="score">
+                        <span class="score__correct">
+                        </span>
+                        <span class="score__incorrect"></span>
+                    </span>
+            </div>
+        </header>
+
+        <main role="main" class="content">
+            <div class="feedback ">
+                    <p class="feedback__negative nodisplay ">feedback dynamicly</p>
+                    <p class="feedback__positive nodisplay ">feedback dynamicly</p>
+            </div>
+            <div class="instructions nodisplay">
+                <p>Welcome to  FC Porto's "The History so Far" Quizz. In this game you are going to be tested about the history and culture of one of the most respected clubs in Europe. Take a moment to read through the instructions and let´s play !</p>
+                
+                <h3>Instructions</h3>
+                <ul>
+                    <li>One question per page.</li>
+                    <li>Once you press the button, the question is submitted.</li>
+                    <li>Correct answer will appear with green border. Red answer with red border.</li>
+                    <li>Next question button appears. Click it for next question.</li>
+                    <li>In the top right corner, you can see the current question and your score up until that point.</li>
+                    <li>After the 10 questions, the game is completed, and in the final page you will know how do you stand in FCPorto Knowledge !</li>
+                </ul>
+            </div>
+            <p class="question">Question dynamically</p>
+            <div class="finalpage nodisplay">
+                <p class="result nodisplay">final text dynamicly</p>
+                <p class="valueScore nodisplay">score text dynamicly</p>
+            </div>
+            <form action="/login" method="post" class="answears">
+
+                <fieldset class="answears__box">
+                   
+                            <legend >Choices</legend>
+
+                        <div class="answears__item">
+
+                            <input type="radio" name="answears" id="answears_1" value="1" class="answears__item__button--button">
+
+                            <label for="answears_1" class="textanswear textanswear1">Lorem ipsum dolor sit amet.</label>
+
+                            <span class="answears__item__button--correct nodisplay">&radic;</span>
+
+                            <span class="answears__item__button--incorrect nodisplay">x</span>
+
+                        </div>
+
+                    
+                    <div class="answears__item">
+
+                        <input type="radio" name="answears" id="answears_2" value="2" class="answears__item__button--button">
+
+                        <label for="answears_2" class="textanswear  textanswear2">Lorem ipsum dolor sit amet.</label>
+
+                        <span class="answears__item__button--correct nodisplay">&radic;</span>
+
+                        <span class="answears__item__button--incorrect nodisplay">x</span>
+
+
+
+                    </div>
+                    <div class="answears__item">
+
+                        <input type="radio" name="answears" id="answears_3" value="3" class="answears__item__button--button">
+
+
+                        <label for="answears_3" class="textanswear textanswear3">Lorem ipsum dolor sit amet.</label>
+
+                        <span class="answears__item__button--correct nodisplay">&radic;</span>
+
+                        <span class="answears__item__button--incorrect nodisplay">x</span>
+
+
+                    </div>
+                    <div class="answears__item">
+
+                        <input type="radio" name="answears" id="answears_4" value="4" class="answears__item__button--button">
+
+
+                        <label for="answears_4" class="textanswear textanswear4">Lorem ipsum dolor sit amet.</label>
+
+                        <span class="answears__item__button--correct nodisplay">&radic;</span>
+
+                        <span class="answears__item__button--incorrect nodisplay">x</span>
+
+                    </div>
+                
+                </fieldset>
+
+                <input type="submit" name="submit" value="Submit" class="answears__btnsub answears__btnsub--sub ">
+
+            </form>
+<!-- 
+            <a href="#" name="submit" value="Submit" class="answears__btnsub answears__btnsub--sub ">Submit</a> -->
+
+            <a href="#" class="answears__btnsub answears__btnsub--next nodisplay">Next Question</a>
+
+            <a href="#" class="answears__btnsub newGameBtn nodisplay">New Game</a>
+            <a href="#" class="resetBtn">Back to the begining</a>
+    </div>
+    </main>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
